@@ -1,4 +1,10 @@
-<%= render 'public/calendar' %>
+  <% if user_signed_in? %>
+    <header>
+    <%= render "layouts/nav/sign_in" %>
+    </header>
+        <%= render "layouts/body/content" %>
+  <% end %>
+
 <main class="container">
 <h1>This is dashboard</h1>
   <div class="p-4 p-md-5 mb-4 text-white rounded bg-dark">
@@ -151,3 +157,5 @@
   </div><!-- /.row -->
 
 </main>
+
+        <%= render "layouts/nav/footer" %>

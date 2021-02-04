@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  devise_for :users, controllers: {omniauth_callbacks: 'omniauth'}
   resources :clients
  #devise_for :users
   root to: 'public#main'
