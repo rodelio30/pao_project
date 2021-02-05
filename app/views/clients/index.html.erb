@@ -1,33 +1,25 @@
-<p id="notice"><%= notice %></p>
+<main class="container">
+<ul class="nav nav-tabs" id="myTab" role="tablist">
+  <li class="nav-item" role="presentation">
+    <a class="nav-link active" id="home-tab" data-bs-toggle="tab" href="#home" role="tab" aria-controls="home" aria-selected="true">Active Clients</a>
+  </li>
+  <li class="nav-item" role="presentation">
+    <a class="nav-link" id="profile-tab" data-bs-toggle="tab" href="#profile" role="tab" aria-controls="profile" aria-selected="false">On Progress Clients</a>
+  </li>
+  <li class="nav-item" role="presentation">
+    <a class="nav-link" id="contact-tab" data-bs-toggle="tab" href="#contact" role="tab" aria-controls="contact" aria-selected="false">Cancel Clients</a>
+  </li>
+</ul>
+<div class="tab-content" id="myTabContent">
+  <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
+    <%= render 'clients/home'%>
+  </div>
+  <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">
 
-<h1>Clients</h1>
+  </div>
+  <div class="tab-pane fade" id="contact" role="tabpanel" aria-labelledby="contact-tab">
 
-<table>
-  <thead>
-    <tr>
-      <th>Name</th>
-      <th>Address</th>
-      <th>Email</th>
-      <th>Cp number</th>
-      <th colspan="3"></th>
-    </tr>
-  </thead>
-
-  <tbody>
-    <% @clients.each do |client| %>
-      <tr>
-        <td><%= client.name %></td>
-        <td><%= client.address %></td>
-        <td><%= client.email %></td>
-        <td><%= client.cp_number %></td>
-        <td><%= link_to 'Show', client %></td>
-        <td><%= link_to 'Edit', edit_client_path(client) %></td>
-        <td><%= link_to 'Destroy', client, method: :delete, data: { confirm: 'Are you sure?' } %></td>
-      </tr>
-    <% end %>
-  </tbody>
-</table>
-
-<br>
-
-<%= link_to 'New Client', new_client_path %>
+  </div>
+</div>
+</div>
+<%= render 'clients/footer'%>
