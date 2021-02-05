@@ -1,0 +1,21 @@
+<link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+<script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<!------ Include the above in your HEAD tag ---------->
+<div class="d-flex justify-content-center">
+        <div class="h-100vh bg-white p-4 d-flex m-4 align-items-center">
+            <div class="mx-5">
+               <div class="text-center">
+                    <div class="mb-5">
+                      <div class="h2 text-info">PUBLIC ATTORNEY'S OFFICE <br>LOG IN</div>
+                    </div>
+               </div>
+                <div class="login my-5">
+
+                    <%= link_to "Login or register Facebook", user_facebook_omniauth_authorize_path, class: "btn btn-outline-primary btn-block" %>
+                     
+                    <%= link_to "Sign in or register Google", user_google_oauth2_omniauth_authorize_path, class: "btn btn-outline-info btn-block" %>
+               </div>
+            </div>
+        </div>
+</div>
