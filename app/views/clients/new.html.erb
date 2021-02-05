@@ -1,5 +1,32 @@
-<h1>New Client</h1>
+<main class="container">
 
-<%= render 'form', client: @client %>
+<div class="row g-3">
+      <div class="col-2">
+        </div>
+      <div class="col-lg-8">
 
-<%= link_to 'Back', clients_path %>
+        <div class="row">
+        <div class="col-4">
+        <h3 class="mb-3">New Client Form</h3>
+
+      </div>
+        <div class="col-6">
+
+      </div>
+        <div class="col-2">
+        <%= link_to 'Back', clients_path, class: "w-10 btn btn-outline-dark btn-sm", style: 'float: right'%>
+
+      </div>
+      </div>
+
+        <br>
+        <%= render 'form', client: @client %>
+        <br>
+      </div>
+<div class="col-2">
+        </div>
+    </div>
+</main>
+<br> <br> <br> <br>
+<%= render 'clients/footer'%>
+
