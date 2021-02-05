@@ -1,6 +1,12 @@
 
 <main class="container">
-<h1>This is dashboard</h1>
+<h1>Dashboard</h1>
+    <% if user_signed_in? %>
+<%= render "meetings/meetings_cta" %>
+<% else %>
+<%= render "meetings/meeting_landing", meetings: @meetings %>
+<% end %>
+<br>
   <div class="p-4 p-md-5 mb-4 text-white rounded bg-dark">
     <div class="col-md-6 px-0">
       <h1 class="display-4 font-italic">Title of a longer featured blog post</h1>

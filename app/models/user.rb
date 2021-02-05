@@ -20,4 +20,6 @@ class User < ApplicationRecord
       user
   end
 
+  has_many :clients, dependent: :destroy
+  has_many :meetings, dependent: :destroy
 end

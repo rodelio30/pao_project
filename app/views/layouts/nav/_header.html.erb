@@ -1,9 +1,9 @@
 <header class="d-flex flex-column flex-md-row align-items-center p-3 px-md-4 mb-3 bg-white border-bottom shadow-sm">
-  <%= link_to "Public Attorney's Office", root_path, class: "h5 my-0 me-md-auto fw-normal text-info" %>
+  <%= link_to "Public Attorney's Office", root_path, class: "h5 my-0 me-md-auto fw-normal pl-4 text-info" %>
   <nav class="my-2 my-md-0 me-md-0">
     <%= link_to "Dashboard", root_path, class: "p-2 text-dark"%>
     <%= link_to "Clients", clients_path, class: "p-2 text-dark"%>
-    <a class="p-2 text-dark" href="#">Schedule</a>
+    <%= link_to "Create New Schedule", new_meeting_path, class: "p-2 text-dark"%>
     <a class="p-2 text-dark" href="#">About us</a>
   </nav>
    <a class="nav-link text-dark dropdown-toggle" href="#" id="dropdown01" data-bs-toggle="dropdown" aria-expanded="false">Settings</a>

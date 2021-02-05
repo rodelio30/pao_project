@@ -12,8 +12,10 @@
  *
  *= require_tree .
  *= require_self
+ *= require trix
  */
 
+@import "simple_calendar";
 @import "sign_in";
 .my-body {
       margin: 0;
@@ -32,10 +34,6 @@ header {
 }
 a:link{
   text-decoration: none;
-}
-@media (min-width: 992px)
-.navbar-expand-lg .navbar-collapse {
-    display: flex!important;
 }
 .navbar-collapse {
     align-items: center;
