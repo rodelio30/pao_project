@@ -10,6 +10,7 @@ gem 'sass-rails', '>= 6'
 gem 'webpacker', '~> 4.0'
 gem 'turbolinks', '~> 5'
 gem 'jbuilder', '~> 2.7'
+gem 'jquery-ui-rails'
 gem 'redis'
 gem 'bootsnap', '>= 1.4.2', require: false
 
@@ -21,7 +22,7 @@ gem 'omniauth-google-oauth2'
 gem 'activerecord-session_store'
 
 # meeting specific
-gem 'simple_calendar', '~> 2.4'
+gem 'simple_calendar'
 gem 'trix'
 gem 'stripe'
 

@@ -13,7 +13,7 @@
 
   </head>
   <body class="my-body">
-    <% if user_signed_in? %>
+    <% if current_user %>
     <header>
     <%= render "layouts/nav/header" %>
     </header>

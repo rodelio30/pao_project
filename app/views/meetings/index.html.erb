@@ -1,2 +1,9 @@
 <div class="container">
+    <% if current_user.meetings.any? %>
+<%= render "meeting_landing", meetings: @meetings %>
+<% else %>
+<%= render "meetings_cta" %>
+<% end %>
+
+
 </div>
